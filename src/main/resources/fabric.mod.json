@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "wecomtools",
+  "version": "${version}",
+
+  "name": "WorldEdit Command Tools",
+  "description": "A bunch of tools to speed up the use of the WorldEdit Mod",
+  "authors": [
+    "Aylias"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/wecomtools/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.aylias.mods.fabric.wecommandtools.ModBase"
+    ]
+  },
+  "mixins": [
+
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x",
+    "worldedit": "*"
+  },
+  "suggests": {
+
+  }
+}
