@@ -20,11 +20,6 @@ public abstract class CommandItem extends Item {
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
         if (!world.isClient()) {
             this.runCommand();
-        } else {
-            if (user instanceof ClientPlayerEntity) {
-                ClientPlayerEntity player = (ClientPlayerEntity) user;
-                player.sendChatMessage("/give @s stone");
-            }
         }
 
         return super.finishUsing(stack, world, user);
